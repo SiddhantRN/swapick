@@ -1,5 +1,4 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
 import {
   createStackNavigator,
   TransitionPresets,
@@ -38,8 +37,5 @@ function AppStack() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {},
-});
 
 export default AppStack;

@@ -1,14 +1,12 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
-import { Entypo } from "@expo/vector-icons";
-import { MaterialIcons } from "@expo/vector-icons";
+import {
+  Entypo,
+  MaterialIcons,
+  MaterialCommunityIcons,
+} from "@expo/vector-icons";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
 
-import HomeScreen from "../Screens/HomeScreen";
 import AddItemScreen from "../Screens/AddItemScreen";
-import MessageScreen from "../Screens/MessageScreen";
-import ProfileScreen from "../Screens/ProfileScreen";
 import colors from "../config/colors";
 import AppStack from "./AppStack";
 import ProfileStack from "./ProfileStack";
@@ -101,9 +99,5 @@ function AppNavigator(props) {
     </Tab.Navigator>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {},
-});
 
 export default AppNavigator;

@@ -6,16 +6,16 @@ import colors from "../config/colors";
 
 function renderBubble(props) {
   return (
-    // Step 3: return the component
+    
     <Bubble
       {...props}
       wrapperStyle={{
         left: {
-          // Here is the color change
+          
           backgroundColor: colors.secondary,
         },
         right: {
-          // Here is the color change
+         
           backgroundColor: colors.primary,
         },
       }}
@@ -75,11 +75,11 @@ function ChatRoom({ route }) {
 
 const styles = StyleSheet.create({
   container: {},
-  sendingContainer: {
-    justifyContent: "center",
-    alignItems: "center",
-    marginBottom: 5,
-  },
+    sendingContainer: {
+      justifyContent: "center",
+      alignItems: "center",
+      marginBottom: 5,
+    },
 });
 
 export default ChatRoom;

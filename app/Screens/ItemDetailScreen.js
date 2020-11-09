@@ -14,10 +14,6 @@ import { useRoute } from "@react-navigation/native";
 import { MaterialIcons, Ionicons } from "@expo/vector-icons";
 
 import colors from "../config/colors";
-const images = [
-  "https://res.cloudinary.com/dy71m2dro/image/upload/v1601276024/FirstClient/Items/ipad-pro-11-select-wifi-spacegray-202003_FMT_WHH_rxl1by.jpg",
-  "https://res.cloudinary.com/dy71m2dro/image/upload/v1601276422/FirstClient/Items/9780465013272_gksz8u.jpg",
-];
 
 const deviceHeight = Dimensions.get("window").height;
 function ItemDetailScreen({ navigation }) {

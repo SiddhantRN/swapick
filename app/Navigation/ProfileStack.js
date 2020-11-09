@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
+
 import {
   createStackNavigator,
   CardStyleInterpolators,
@@ -33,9 +33,5 @@ function ProfileStack(props) {
     </Stack.Navigator>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {},
-});
 
 export default ProfileStack;

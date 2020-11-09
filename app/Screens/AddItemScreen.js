@@ -42,7 +42,6 @@ function AddItemScreen({ navigation }) {
   const validationSchema = Yup.object().shape({
     Item: Yup.string().required().min(1).label("Item's Title"),
     price: Yup.number().required().label("Price"),
-
     Description: Yup.string().max(200).label("Item's Description"),
   });
   const [images, setImages] = useState([]);
@@ -67,7 +66,6 @@ function AddItemScreen({ navigation }) {
   };
 
   const handleSubmit = (values) => {
-    // navigation.navigate("OwnerDetails", { doggy: values });
     alert("Item has been submitted");
     console.log("Item has been submitted");
   };
@@ -96,7 +94,6 @@ function AddItemScreen({ navigation }) {
         handleSubmit,
       }) => (
         <View style={styles.container}>
-          {/* <KeyboardAwareScrollView style={{ flex: 1 }}> */}
           {!up && (
             <>
               <View style={styles.header}>
@@ -107,7 +104,7 @@ function AddItemScreen({ navigation }) {
                     position: "absolute",
                     right: 12,
                   }}
-                  onPress={() => handleSubmit}
+                  onPress={handleSubmit}
                 >
                   <Text
                     style={{
@@ -250,7 +247,6 @@ function AddItemScreen({ navigation }) {
               onChangeText={(value) => setAddress(value)}
             />
           </View>
-          {/* </KeyboardAwareScrollView> */}
         </View>
       )}
     </Formik>
